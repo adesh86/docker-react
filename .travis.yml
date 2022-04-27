@@ -5,7 +5,13 @@ services:
   - docker
 
 before_install:
-  - docker build -t adesh/docker-react -f Dockerfile.dev .
+  - docker build -t stephengrider/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true adesh/docker-react npm run test
+  - docker run -e CI=true stephengrider/docker-react npm run test
+
+deploy:
+  provider: azure_web_apps
+  username: $user       
+  password: $password 
+  site: docker-react
