@@ -14,5 +14,5 @@ deploy:
   provider: azure_web_apps
   verbose: 'true'
   username: 'demouser'   
-  password: 'Password' 
+  password: 'News27042022' 
   site: 'docker-react'
