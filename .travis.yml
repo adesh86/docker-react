@@ -12,7 +12,7 @@ script:
 
 deploy:
   provider: azure_web_apps
-  verbose: true
-  username: "$user"       
-  password: "$password" 
-  site: docker-react
+  verbose: 'true'
+  username: '$user'   
+  password: '$password' 
+  site: 'docker-react'
