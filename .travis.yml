@@ -13,6 +13,6 @@ script:
 deploy:
   provider: azure_web_apps
   verbose: 'true'
-  username: 'demouser%40tomaradesh1984gmail.onmicrosoft.com'   
+  username: 'demouser1'   
   password: 'News27042022' 
   site: 'docker-react'
